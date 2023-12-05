@@ -1,3 +1,6 @@
+data
+results
+swept_wing_executed.ipynb
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
