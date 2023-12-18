@@ -1,8 +1,8 @@
 # Backpropagation and gradient descent for an optimized DMD
 
-This code repository accompanies the article [Backpropagation and gradient descent for an optimized DMD](TODO):
+This code repository accompanies the article *Backpropagation and gradient descent for an optimized DMD*:
 ```
-Reference to be added.
+Reference to be added after clearance.
 ```
 
 This research is part of the research unit [FOR 2895](https://www.for2895.uni-stuttgart.de/) on **Unsteady flow and interaction phenomena at High Speed Stall conditions**.
@@ -12,7 +12,7 @@ The approach is very robust to noise, allows incorporating [physical constraints
 
 ## Results sneak peek
 
-The figure below shows a sequence of vorticity snapshots taken from the laminar flow past a cylinder. The snapshots are heavily corrupted by noise. The noise is scaled by the absolute value of the vorticity and a scaling factor $ \gamma $.
+The figure below shows a sequence of vorticity snapshots taken from the laminar flow past a cylinder. The snapshots are heavily corrupted by noise. The noise is scaled by the absolute value of the vorticity and a scaling factor $\gamma$.
 
 <img src="cylinder_noisy.png" style="width: 100%">
 
@@ -24,9 +24,9 @@ The figure below presents the first five eigenvalues (sorting by mode amplitude)
 
 The new algorithm is tested on three different datasets. Each analysis is contained in a dedicated Jupyter notebook:
 
-- [1d_example.ipynb](1d_example.ipynb): toy problem with known dynamics; corresponds to example 2 in [Askham and Kutz](https://doi.org/10.1137/M1124176)
-- [cylinder.ipynb](cylinder.ipynb): laminar flow past a circular cylinder at $Re=100$; classical benchmark case
-- [swept_wing.ipynb](swept_wing.ipynb): pressure sensitive paint measurements of transonic shock buffet on a swept wing
+- [1d_example.ipynb](./1d_example.ipynb): toy problem with known dynamics; corresponds to example 2 in [Askham and Kutz](https://doi.org/10.1137/M1124176)
+- [cylinder.ipynb](./cylinder.ipynb): laminar flow past a circular cylinder at $Re=100$; classical benchmark case
+- [swept_wing.ipynb](./swept_wing.ipynb): pressure sensitive paint measurements of transonic shock buffet on a swept wing
 
 The DMD analyses rely on two packages, PyDMD and flowTorch. [PyDMD](https://github.com/PyDMD/PyDMD) implements the optimized DMD based on variable projection. To install PyDMD, run:
 ```
@@ -39,10 +39,8 @@ pip3 install git+https://github.com/FlowModelingControl/flowtorch.git@aweiner
 
 The snapshots of the cylinder flow are part of the flowTorch dataset collection; refer to the [installation instructions](https://github.com/FlowModelingControl/flowtorch#getting-started). The shock buffet data is proprietary and cannot be shared easily. To get access to the data, please contact one of the authors.
 
-In case of doubt, feel free to open an issue in this repository or to contact one of the authors.
+In case of doubt, feel free to open an issue in this repository or contact one of the authors.
 
 ## Acknowledgement
 
-```
 The authors gratefully acknowledge the Deutsche Forschungsgemeinschaft DFG (German Research Foundation) for funding this work in the framework of the research unit FOR 2895 under the grant WE 6948/1-1. The authors would like to thank the Helmholtz Gemeinschaft HGF (Helmholtz Association), Deutsches Zentrum für Luft- und Raumfahrt DLR (German Aerospace Center) and Airbus for providing the wind tunnel model and financing the wind tunnel measurements as well as public support to mature the test methods applied by DLR and ETW.
-```
