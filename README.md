@@ -24,9 +24,9 @@ The figure below presents the first five eigenvalues (sorting by mode amplitude)
 
 The new algorithm is tested on three different datasets. Each analysis is contained in a dedicated Jupyter notebook:
 
-- [1d_example.ipynb](./1d_example.ipynb): toy problem with known dynamics; corresponds to example 2 in [Askham and Kutz](https://doi.org/10.1137/M1124176)
-- [cylinder.ipynb](./cylinder.ipynb): laminar flow past a circular cylinder at $Re=100$; classical benchmark case
-- [swept_wing.ipynb](./swept_wing.ipynb): pressure sensitive paint measurements of transonic shock buffet on a swept wing
+- [1d_example.ipynb](https://github.com/AndreWeiner/optDMD/blob/main/1d_example.ipynb): toy problem with known dynamics; corresponds to example 2 in [Askham and Kutz](https://doi.org/10.1137/M1124176)
+- [cylinder.ipynb](https://github.com/AndreWeiner/optDMD/blob/main/cylinder.ipynb): laminar flow past a circular cylinder at $Re=100$; classical benchmark case
+- [swept_wing.ipynb](https://github.com/AndreWeiner/optDMD/blob/main/swept_wing.ipynb): pressure sensitive paint measurements of transonic shock buffet on a swept wing
 
 The DMD analyses rely on two packages, PyDMD and flowTorch. [PyDMD](https://github.com/PyDMD/PyDMD) implements the optimized DMD based on variable projection. To install PyDMD, run:
 ```
