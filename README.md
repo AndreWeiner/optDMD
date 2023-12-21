@@ -1,8 +1,15 @@
 # Backpropagation and gradient descent for an optimized DMD
 
-This code repository accompanies the article *Backpropagation and gradient descent for an optimized DMD*:
+This code repository accompanies the article [Backpropagation and gradient descent for an optimized DMD](https://arxiv.org/abs/2312.12928). Reference for citations:
 ```
-Reference to be added after clearance.
+@misc{weiner2023,
+      title={Backpropagation and gradient descent for an optimized dynamic mode decomposition}, 
+      author={Andre Weiner and Richard Semaan},
+      year={2023},
+      eprint={2312.12928},
+      archivePrefix={arXiv},
+      primaryClass={physics.flu-dyn}
+}
 ```
 
 This research is part of the research unit [FOR 2895](https://www.for2895.uni-stuttgart.de/) on **Unsteady flow and interaction phenomena at High Speed Stall conditions**.
